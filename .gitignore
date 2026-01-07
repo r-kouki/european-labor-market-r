@@ -42,6 +42,7 @@ data/processed/*.rds
 *.html
 !outputs/**/*.html
 !quarto/**/*.html
+!docs/**/*.html
 
 # Keep minimal example outputs but ignore them in main workflow
 minimal.html
