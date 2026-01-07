@@ -1,0 +1,6 @@
+test_id,test_name,hypothesis,statistic,p_value,result_status,interpretation
+trend,Linear Time Trend,ICT employment share has increased significantly over time,0.16636363636362847,7.027523103817937e-9,SIGNIFICANT,ICT share increases by 0.166 percentage points per year
+vacancy_comparison,Paired t-test,ICT sector vacancy rates exceed overall economy vacancy rates,17.23015616866116,1.410272022918588e-48,SIGNIFICANT,Tech sector vacancies are 0.79% higher on average
+earnings_correlation,Pearson Correlation,Higher ICT employment correlates with higher earnings,0.6279100994437855,9.723197682329733e-12,SIGNIFICANT,Correlation = 0.628 (95% CI: 0.488 to 0.736)
+beveridge,Beveridge Curve (Correlation),Unemployment and vacancy rates are negatively correlated,NA,7.765839802276447e-6,SIGNIFICANT,Correlation = -0.950 (negative = tighter labor market)
+covid_break,Structural Break Test (2020),ICT employment growth rate changed after COVID-19,NA,0.003933208312058561,SIGNIFICANT,Slope changed by 0.0557 pp/year after 2020

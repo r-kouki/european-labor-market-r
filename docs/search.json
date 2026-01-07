@@ -1,0 +1,331 @@
+[
+  {
+    "objectID": "quarto/slides.html#why-this-matters",
+    "href": "quarto/slides.html#why-this-matters",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Why This Matters",
+    "text": "Why This Matters\n\nDigital transformation is reshaping European labor markets\nGrowing demand for ICT specialists across all sectors\nPolicy decisions require evidence on workforce evolution\nUnderstanding gaps between education and employment\n\n\nThe European tech job market has experienced significant changes over the past decade, with implications for education, immigration policy, and economic competitiveness."
+  },
+  {
+    "objectID": "quarto/slides.html#research-questions",
+    "href": "quarto/slides.html#research-questions",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nHow has ICT employment evolved across the EU?\nWhat is the relationship between unemployment and vacancies?\nHow do vacancy rates differ across sectors?\nIs the education pipeline meeting market demands?\nWhat factors correlate with higher ICT employment?"
+  },
+  {
+    "objectID": "quarto/slides.html#data-overview",
+    "href": "quarto/slides.html#data-overview",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Data Overview",
+    "text": "Data Overview\n\n\n\nIndicator\nSource\nCoverage\n\n\n\n\nICT Employment\nisoc_sks_itspt\n2014-2024\n\n\nUnemployment\nune_rt_a, une_rt_m\n2014-2025\n\n\nJob Vacancies\njvs_a_rate_r2\n2014-2024\n\n\nGraduates\neduc_uoe_grad02\n2014-2023\n\n\nEarnings\nearn_ses_pub2s\n2014, 2018, 2022\n\n\n\nSource: All data from Eurostat"
+  },
+  {
+    "objectID": "quarto/slides.html#ict-specialists-growing-share",
+    "href": "quarto/slides.html#ict-specialists-growing-share",
+    "title": "European Tech & Engineering Job Market",
+    "section": "ICT Specialists: Growing Share",
+    "text": "ICT Specialists: Growing Share\n\n\n\n\nKey Finding:\nEU27 ICT employment share grew from 3.4% (2014) to 5% (2024)\nConsistent upward trend across the decade"
+  },
+  {
+    "objectID": "quarto/slides.html#country-leaders",
+    "href": "quarto/slides.html#country-leaders",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Country Leaders",
+    "text": "Country Leaders"
+  },
+  {
+    "objectID": "quarto/slides.html#job-vacancies-tech-sector-leads",
+    "href": "quarto/slides.html#job-vacancies-tech-sector-leads",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Job Vacancies: Tech Sector Leads",
+    "text": "Job Vacancies: Tech Sector Leads\n\n\nInformation & Communication sector shows persistently high vacancy rates"
+  },
+  {
+    "objectID": "quarto/slides.html#beveridge-curve-labor-market-dynamics",
+    "href": "quarto/slides.html#beveridge-curve-labor-market-dynamics",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Beveridge Curve: Labor Market Dynamics",
+    "text": "Beveridge Curve: Labor Market Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\nInterpretation:\n\nMovement along curve: cyclical changes\nShift of curve: structural changes\nRecent years show tighter labor market"
+  },
+  {
+    "objectID": "quarto/slides.html#graduate-pipeline",
+    "href": "quarto/slides.html#graduate-pipeline",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Graduate Pipeline",
+    "text": "Graduate Pipeline"
+  },
+  {
+    "objectID": "quarto/slides.html#earnings-ict-employment",
+    "href": "quarto/slides.html#earnings-ict-employment",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Earnings & ICT Employment",
+    "text": "Earnings & ICT Employment\n\n\nCountries with higher ICT shares tend to have higher median earnings"
+  },
+  {
+    "objectID": "quarto/slides.html#work-based-learning",
+    "href": "quarto/slides.html#work-based-learning",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Work-Based Learning",
+    "text": "Work-Based Learning"
+  },
+  {
+    "objectID": "quarto/slides.html#statistical-evidence-time-trend",
+    "href": "quarto/slides.html#statistical-evidence-time-trend",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Statistical Evidence: Time Trend",
+    "text": "Statistical Evidence: Time Trend\nQuestion: Is ICT employment growth statistically significant?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nConclusion: Growth rate = 0.166 pp/year, p &lt; 0.001 ✓\nThis isn’t random—ICT jobs are genuinely growing as a share of employment each year!"
+  },
+  {
+    "objectID": "quarto/slides.html#statistical-evidence-earnings-correlation",
+    "href": "quarto/slides.html#statistical-evidence-earnings-correlation",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Statistical Evidence: Earnings Correlation",
+    "text": "Statistical Evidence: Earnings Correlation\nQuestion: Do higher ICT employment rates correlate with higher earnings?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nConclusion: r = 0.63, p &lt; 0.001 ✓\nStrong positive correlation—more tech jobs → higher overall wages!"
+  },
+  {
+    "objectID": "quarto/slides.html#all-statistical-tests-summary",
+    "href": "quarto/slides.html#all-statistical-tests-summary",
+    "title": "European Tech & Engineering Job Market",
+    "section": "📊 All Statistical Tests: Summary",
+    "text": "📊 All Statistical Tests: Summary\nAll tests show highly significant results (p &lt; 0.05), confirming:\n\n\n\n\n\n\n\n\nFinding\nTest\nResult\n\n\n\n\n✅ ICT employment is genuinely growing (not random)\nLinear Regression\np &lt; 0.001, R²=0.98\n\n\n✅ Tech sector has persistently higher vacancy rates\nPaired t-test\np &lt; 0.001\n\n\n✅ Countries with more tech jobs have higher wages\nPearson Correlation\nr=0.63, p &lt; 0.001\n\n\n✅ Standard labor market dynamics apply (Beveridge)\nCorrelation\nr=-0.95, p &lt; 0.001\n\n\n✅ COVID-19 accelerated ICT growth\nStructural Break\np = 0.004\n\n\n\n\nBottom Line: These aren’t just visual patterns—they’re statistically robust findings!"
+  },
+  {
+    "objectID": "quarto/slides.html#covid-19-impact-structural-break",
+    "href": "quarto/slides.html#covid-19-impact-structural-break",
+    "title": "European Tech & Engineering Job Market",
+    "section": "COVID-19 Impact: Structural Break",
+    "text": "COVID-19 Impact: Structural Break\nQuestion: Did COVID-19 accelerate ICT employment growth?\n\nPlease enable JavaScript to experience the dynamic code cell content on this page.\n\nConclusion: Slope increased by +0.056 pp/year after 2020 (p = 0.004)\nThe pandemic genuinely accelerated digital transformation!"
+  },
+  {
+    "objectID": "quarto/slides.html#key-findings",
+    "href": "quarto/slides.html#key-findings",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Key Findings",
+    "text": "Key Findings\n\nICT employment growing steadily across EU27 (statistically significant trend)\nHigh vacancy rates in tech sector indicate talent shortages\nCountry heterogeneity - Nordic countries lead in ICT shares\nStrong positive correlation between ICT employment and earnings (r = 0.6-0.7)\nGraduate numbers increasing but demand remains strong\nCOVID-19 accelerated the growth of ICT employment (structural break confirmed)"
+  },
+  {
+    "objectID": "quarto/slides.html#limitations",
+    "href": "quarto/slides.html#limitations",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Limitations",
+    "text": "Limitations\n\nData availability varies by indicator and country\nMethodological changes may affect comparability\nCross-sectional correlations ≠ causation\nEU27 aggregates mask within-country variation"
+  },
+  {
+    "objectID": "quarto/slides.html#policy-implications",
+    "href": "quarto/slides.html#policy-implications",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Policy Implications",
+    "text": "Policy Implications\n\nEducation investment in digital skills justified by persistent vacancies\nTargeted policies for countries with lower ICT employment\nWork-based learning programs to bridge education-employment gap\nCross-border mobility to address regional imbalances"
+  },
+  {
+    "objectID": "quarto/slides.html#reproducibility",
+    "href": "quarto/slides.html#reproducibility",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nAll analysis is fully reproducible:\n# Run in sequence\nsource(\"R/00_setup.R\")\nsource(\"R/01_download.R\")\nsource(\"R/02_clean.R\")\nsource(\"R/03_build_panel.R\")\nsource(\"R/04_visualize.R\")\nsource(\"R/04b_statistical_analysis.R\")\nsource(\"R/06_render_quarto.R\")\nRepository: Contains all code, documentation, and outputs\nAuthor: kouki abderrahmen"
+  },
+  {
+    "objectID": "quarto/slides.html#thank-you",
+    "href": "quarto/slides.html#thank-you",
+    "title": "European Tech & Engineering Job Market",
+    "section": "Thank You",
+    "text": "Thank You\nData Source: Eurostat\nDataset Codes: isoc_sks_itspt, une_rt_a, une_rt_m, jvs_a_rate_r2, educ_uoe_grad02, earn_ses_pub2s"
+  },
+  {
+    "objectID": "quarto/report.html",
+    "href": "quarto/report.html",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "",
+    "text": "The European labor market has undergone significant transformation over the past decade, driven by digitalization and technological advancement. Understanding these changes is critical for policymakers, educators, and job seekers alike.\nThis report analyzes key indicators of the European tech and engineering job market from 2014 to 2024, using official Eurostat data to answer fundamental questions about workforce evolution, opportunity dynamics, and educational pipeline alignment.\n\n\n\nThis analysis addresses the following questions:\n\nICT Employment Growth: How has the share of ICT specialists in total employment evolved across EU countries?\nLabor Market Dynamics: What is the relationship between unemployment and job vacancies (the Beveridge curve)?\nSectoral Opportunities: How do job vacancy rates in the Information & Communication sector compare to the overall economy?\nEducational Pipeline: Are European universities producing enough ICT and engineering graduates to meet market demands?\nCross-Country Variation: Which countries lead in ICT employment, and what factors correlate with higher tech employment shares?"
+  },
+  {
+    "objectID": "quarto/report.html#motivation",
+    "href": "quarto/report.html#motivation",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "",
+    "text": "The European labor market has undergone significant transformation over the past decade, driven by digitalization and technological advancement. Understanding these changes is critical for policymakers, educators, and job seekers alike.\nThis report analyzes key indicators of the European tech and engineering job market from 2014 to 2024, using official Eurostat data to answer fundamental questions about workforce evolution, opportunity dynamics, and educational pipeline alignment."
+  },
+  {
+    "objectID": "quarto/report.html#research-questions",
+    "href": "quarto/report.html#research-questions",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "",
+    "text": "This analysis addresses the following questions:\n\nICT Employment Growth: How has the share of ICT specialists in total employment evolved across EU countries?\nLabor Market Dynamics: What is the relationship between unemployment and job vacancies (the Beveridge curve)?\nSectoral Opportunities: How do job vacancy rates in the Information & Communication sector compare to the overall economy?\nEducational Pipeline: Are European universities producing enough ICT and engineering graduates to meet market demands?\nCross-Country Variation: Which countries lead in ICT employment, and what factors correlate with higher tech employment shares?"
+  },
+  {
+    "objectID": "quarto/report.html#geographic-coverage",
+    "href": "quarto/report.html#geographic-coverage",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "2.1 Geographic Coverage",
+    "text": "2.1 Geographic Coverage\nThe analysis covers:\n\nEU27: European Union (27 member states, post-Brexit composition)\nIndividual EU member states: All 27 countries\nAssociated countries: UK, Switzerland, Norway, Iceland (where available)"
+  },
+  {
+    "objectID": "quarto/report.html#data-pipeline",
+    "href": "quarto/report.html#data-pipeline",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "3.1 Data Pipeline",
+    "text": "3.1 Data Pipeline\nThe analysis follows a reproducible pipeline:\n\nDownload: Raw data fetched from Eurostat API using the eurostat R package\nClean: Standardize formats, handle missing values, apply filters\nTransform: Create derived indicators, build panel dataset\nVisualize: Generate publication-quality figures\nReport: Compile findings in this document"
+  },
+  {
+    "objectID": "quarto/report.html#key-definitions",
+    "href": "quarto/report.html#key-definitions",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "3.2 Key Definitions",
+    "text": "3.2 Key Definitions\n\nICT Specialists: Workers whose main job involves developing, operating, and maintaining ICT systems (as defined by Eurostat)\nJob Vacancy Rate: Number of job vacancies as a percentage of occupied posts plus vacancies\nNACE Sector J: Information and Communication activities\nNACE Sector M: Professional, Scientific, and Technical activities"
+  },
+  {
+    "objectID": "quarto/report.html#ict-specialists-employment",
+    "href": "quarto/report.html#ict-specialists-employment",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "4.1 ICT Specialists Employment",
+    "text": "4.1 ICT Specialists Employment\n\n4.1.1 EU27 Trend\nThe share of ICT specialists in EU27 total employment has grown steadily over the past decade:\n\nStarting point (2014): 3.4% of total employment\nLatest data (2024): 5.0% of total employment\nChange: +1.6 percentage points\n\n\n\n\n\n\n\n\n\nFigure 1: ICT Specialists Share of Employment Over Time\n\n\n\n\n\n\n\n4.1.2 Cross-Country Comparison\n\n\n\nTop 10 Countries by ICT Employment Share, 2024\n\n\nCountry\nICT Share (%)\n\n\n\n\nSweden\n8.6\n\n\nLuxembourg\n8.0\n\n\nFinland\n7.8\n\n\nEstonia\n7.2\n\n\nNetherlands\n7.0\n\n\nIreland\n6.3\n\n\nDenmark\n5.8\n\n\nBelgium\n5.7\n\n\nSwitzerland\n5.7\n\n\nNorway\n5.5\n\n\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: ICT Employment Share: Top and Bottom Countries"
+  },
+  {
+    "objectID": "quarto/report.html#job-vacancy-dynamics",
+    "href": "quarto/report.html#job-vacancy-dynamics",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "4.2 Job Vacancy Dynamics",
+    "text": "4.2 Job Vacancy Dynamics\n\n4.2.1 Information & Communication Sector\n\n\n\n\n\n\n\n\nFigure 3: Job Vacancy Rate in Information & Communication Sector\n\n\n\n\n\nThe Information & Communication sector (NACE J) consistently shows higher vacancy rates than the overall economy, indicating persistent demand for workers in this field.\n\n\n4.2.2 Beveridge Curve Analysis\nThe Beveridge curve shows the relationship between unemployment and job vacancies. A shift in this relationship can indicate structural changes in the labor market.\n\n\n\n\n\n\n\n\nFigure 4: Beveridge Curve: EU27 Unemployment vs Job Vacancies"
+  },
+  {
+    "objectID": "quarto/report.html#educational-pipeline",
+    "href": "quarto/report.html#educational-pipeline",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "4.3 Educational Pipeline",
+    "text": "4.3 Educational Pipeline\n\n4.3.1 Graduate Trends\n\n\n\n\n\n\n\n\nFigure 5: Tertiary Graduates in ICT and Engineering Fields"
+  },
+  {
+    "objectID": "quarto/report.html#earnings-relationship",
+    "href": "quarto/report.html#earnings-relationship",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "4.4 Earnings Relationship",
+    "text": "4.4 Earnings Relationship\n\n\n\n\n\n\n\n\nFigure 6: Relationship Between ICT Employment and Hourly Earnings\n\n\n\n\n\nCountries with higher ICT employment shares tend to have higher median hourly earnings, though causality cannot be established from this cross-sectional relationship."
+  },
+  {
+    "objectID": "quarto/report.html#work-based-learning",
+    "href": "quarto/report.html#work-based-learning",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "4.5 Work-Based Learning",
+    "text": "4.5 Work-Based Learning\n\n\n\n\n\n\n\n\nFigure 7: Exposure of VET Graduates to Work-Based Learning"
+  },
+  {
+    "objectID": "quarto/report.html#time-trend-analysis",
+    "href": "quarto/report.html#time-trend-analysis",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.1 Time Trend Analysis",
+    "text": "5.1 Time Trend Analysis\nResearch Question: Has ICT employment share increased significantly over time?\n\n\nView statistical test code\n# Linear regression of ICT share on year\neu27_trend &lt;- panel_stats |&gt;\n  filter(geo == \"EU27_2020\", !is.na(ict_share_pc_emp))\n\nmodel_trend &lt;- lm(ict_share_pc_emp ~ year, data = eu27_trend)\ntrend_summary &lt;- broom::tidy(model_trend)\ntrend_fit &lt;- broom::glance(model_trend)\n\nknitr::kable(\n  trend_summary,\n  digits = 4,\n  caption = \"Time Trend Regression Results\",\n  col.names = c(\"Term\", \"Estimate\", \"Std Error\", \"t-statistic\", \"p-value\")\n)\n\n\n\nTime Trend Regression Results\n\n\nTerm\nEstimate\nStd Error\nt-statistic\np-value\n\n\n\n\n(Intercept)\n-331.7791\n16.3139\n-20.3372\n0\n\n\nyear\n0.1664\n0.0081\n20.5891\n0\n\n\n\n\n\nInterpretation: The ICT employment share increases by approximately 0.166 percentage points per year (p &lt; 0.001). This is highly statistically significant, meaning the growth pattern isn’t random—it’s a real trend. From a software developer’s perspective, this confirms what we see in the job market: tech roles are consistently growing as a share of total employment.\nKey Insight: With an R² of 0.979, the year alone explains about 98% of the variation in ICT employment. This linear trend has been remarkably consistent over the decade."
+  },
+  {
+    "objectID": "quarto/report.html#vacancy-rate-comparison",
+    "href": "quarto/report.html#vacancy-rate-comparison",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.2 Vacancy Rate Comparison",
+    "text": "5.2 Vacancy Rate Comparison\nResearch Question: Do tech sector vacancy rates exceed overall economy rates?\n\n\nView test code\nvacancy_data &lt;- panel_stats |&gt;\n  filter(!is.na(vacancy_rate_J), !is.na(vacancy_rate_total))\n\nif (nrow(vacancy_data) &gt; 10) {\n  vacancy_test &lt;- t.test(\n    vacancy_data$vacancy_rate_J,\n    vacancy_data$vacancy_rate_total,\n    paired = TRUE\n  )\n  \n  vacancy_result &lt;- broom::tidy(vacancy_test)\n  \n  knitr::kable(\n    vacancy_result |&gt; select(estimate, statistic, p.value, conf.low, conf.high),\n    digits = 3,\n    caption = \"Paired t-test: Tech Sector vs Overall Economy Vacancy Rates\",\n    col.names = c(\"Mean Difference (%)\", \"t-statistic\", \"p-value\", \"95% CI Low\", \"95% CI High\")\n  )\n} else {\n  cat(\"*Note: Insufficient data available for vacancy rate comparison due to Eurostat API limitations.*\")\n}\n\n\n\nPaired t-test: Tech Sector vs Overall Economy Vacancy Rates\n\n\nMean Difference (%)\nt-statistic\np-value\n95% CI Low\n95% CI High\n\n\n\n\n0.791\n17.23\n0\n0.701\n0.882\n\n\n\n\n\nInterpretation: Tech sector vacancy rates are 0.79% higher than the overall economy (p &lt; 0.001). This confirms what many of us in software engineering experience: companies struggle more to fill tech positions compared to other roles. The persistent talent gap means job security and negotiating power for developers."
+  },
+  {
+    "objectID": "quarto/report.html#earnings-ict-employment-correlation",
+    "href": "quarto/report.html#earnings-ict-employment-correlation",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.3 Earnings-ICT Employment Correlation",
+    "text": "5.3 Earnings-ICT Employment Correlation\nResearch Question: Do countries with higher ICT employment have higher earnings?\n\n\nView correlation test\nearnings_data &lt;- panel_stats |&gt;\n  filter(!is.na(median_hourly_earnings_eur), !is.na(ict_share_pc_emp))\n\nif (nrow(earnings_data) &gt; 10) {\n  cor_test &lt;- cor.test(\n    earnings_data$ict_share_pc_emp,\n    earnings_data$median_hourly_earnings_eur,\n    method = \"pearson\"\n  )\n  \n  cor_result &lt;- broom::tidy(cor_test)\n  \n  knitr::kable(\n    cor_result |&gt; select(estimate, statistic, p.value, conf.low, conf.high),\n    digits = 3,\n    caption = \"Pearson Correlation: ICT Employment Share vs Median Earnings\",\n    col.names = c(\"Correlation (r)\", \"t-statistic\", \"p-value\", \"95% CI Low\", \"95% CI High\")\n  )\n}\n\n\n\nPearson Correlation: ICT Employment Share vs Median Earnings\n\n\nCorrelation (r)\nt-statistic\np-value\n95% CI Low\n95% CI High\n\n\n\n\n0.628\n7.78\n0\n0.488\n0.736\n\n\n\n\n\nInterpretation: There’s a strong positive correlation (r = 0.628, p &lt; 0.001) between ICT employment share and median earnings. About 39% of the variation in earnings across countries can be explained by ICT employment levels. As someone studying software engineering, this is encouraging—countries investing in tech sectors tend to have better overall wage levels. However, correlation doesn’t prove causation; it could be that wealthier countries both pay more AND have more tech jobs."
+  },
+  {
+    "objectID": "quarto/report.html#beveridge-curve-relationship",
+    "href": "quarto/report.html#beveridge-curve-relationship",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.4 Beveridge Curve Relationship",
+    "text": "5.4 Beveridge Curve Relationship\nResearch Question: Are unemployment and vacancy rates negatively correlated?\n\n\nShow code\nbeveridge_data &lt;- panel_stats |&gt;\n  filter(geo == \"EU27_2020\", !is.na(unemp_rate_pc_act), !is.na(vacancy_rate_total))\n\nif (nrow(beveridge_data) &gt; 5) {\n  beveridge_cor &lt;- cor.test(\n    beveridge_data$unemp_rate_pc_act,\n    beveridge_data$vacancy_rate_total,\n    method = \"pearson\"\n  )\n  \n  beveridge_result &lt;- broom::tidy(beveridge_cor)\n  \n  knitr::kable(\n    beveridge_result |&gt; select(estimate, statistic, p.value),\n    digits = 3,\n    caption = \"Beveridge Curve Correlation (EU27)\",\n    col.names = c(\"Correlation (r)\", \"t-statistic\", \"p-value\")\n  )\n}\n\n\n\nBeveridge Curve Correlation (EU27)\n\n\nCorrelation (r)\nt-statistic\np-value\n\n\n\n\n-0.95\n-9.105\n0\n\n\n\n\n\nInterpretation: The negative correlation (r = -0.950, p = 0.000) confirms the classic Beveridge curve relationship: when unemployment is low, vacancies are high, and vice versa. From a job seeker’s perspective, this means during economic expansions (low unemployment), there are more open positions available. The relationship isn’t perfect because structural factors also matter—skills mismatches can cause high unemployment and high vacancies simultaneously."
+  },
+  {
+    "objectID": "quarto/report.html#covid-19-structural-break-analysis",
+    "href": "quarto/report.html#covid-19-structural-break-analysis",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.5 COVID-19 Structural Break Analysis",
+    "text": "5.5 COVID-19 Structural Break Analysis\nResearch Question: Did COVID-19 cause a measurable acceleration in ICT employment growth?\nThe pandemic of 2020 dramatically accelerated digital transformation across Europe. We test whether this represents a statistically significant “structural break” in the ICT employment trend.\n\n\nView structural break test code\n# Structural break test: interaction between time and COVID period\neu27_covid &lt;- panel_stats |&gt;\n  filter(geo == \"EU27_2020\", !is.na(ict_share_pc_emp)) |&gt;\n  mutate(covid = ifelse(year &gt;= 2020, 1, 0))\n\nif (nrow(eu27_covid) &gt; 5) {\n  model_break &lt;- lm(ict_share_pc_emp ~ year * covid, data = eu27_covid)\n  break_summary &lt;- broom::tidy(model_break)\n  \n  knitr::kable(\n    break_summary,\n    digits = 4,\n    caption = \"Structural Break Regression: COVID-19 Impact on ICT Growth\",\n    col.names = c(\"Term\", \"Estimate\", \"Std Error\", \"t-statistic\", \"p-value\")\n  )\n}\n\n\n\nStructural Break Regression: COVID-19 Impact on ICT Growth\n\n\nTerm\nEstimate\nStd Error\nt-statistic\np-value\n\n\n\n\n(Intercept)\n-226.7905\n16.0515\n-14.1290\n0.0000\n\n\nyear\n0.1143\n0.0080\n14.3574\n0.0000\n\n\ncovid\n-112.3095\n26.6646\n-4.2119\n0.0040\n\n\nyear:covid\n0.0557\n0.0132\n4.2207\n0.0039\n\n\n\n\n\nInterpretation: The interaction term (year × covid) is statistically significant (p = 0.0039), indicating that COVID-19 caused a genuine acceleration in ICT employment growth. The slope increased by approximately 0.0557 percentage points per year after 2020. This confirms what many of us experienced—the pandemic didn’t just temporarily shift work online, it fundamentally accelerated the structural growth of tech employment in Europe."
+  },
+  {
+    "objectID": "quarto/report.html#statistical-summary",
+    "href": "quarto/report.html#statistical-summary",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "5.6 Statistical Summary",
+    "text": "5.6 Statistical Summary\n\n\n\n*Note: *** indicates p &lt; 0.05 (statistically significant), ns = not significant*\n\n\nBottom Line: The statistical tests confirm what the visualizations suggest: ICT employment is genuinely growing, tech sector demand exceeds overall economy demand, and countries with more tech jobs tend to have higher earnings. These aren’t just visual patterns—they’re statistically robust findings that can inform career and policy decisions.\n\n\n\n\n\n\nNote📊 Key Statistical Conclusions\n\n\n\nAll tests show highly significant results (p &lt; 0.05), confirming that:\n\n✅ ICT employment is genuinely growing (not random) — Linear regression shows consistent +0.166 pp/year growth with R² = 0.98\n✅ Tech sector has persistently higher vacancy rates — Paired t-test confirms tech vacancies exceed overall economy by ~0.8%\n✅ Countries with more tech jobs have higher overall wages — Pearson correlation r = 0.63 (strong positive relationship)\n✅ Standard labor market dynamics apply (Beveridge curve) — Classic inverse relationship confirmed (r = -0.95)\n✅ COVID-19 caused a measurable acceleration in ICT growth — Structural break test shows +0.056 pp/year additional growth post-2020 (p = 0.004)\n\nImplication: These findings provide robust statistical evidence supporting continued investment in digital skills and tech sector development across the EU."
+  },
+  {
+    "objectID": "quarto/report.html#key-findings",
+    "href": "quarto/report.html#key-findings",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "6.1 Key Findings",
+    "text": "6.1 Key Findings\n\nGrowing ICT workforce: The EU27 has seen consistent growth in ICT specialist employment, reflecting ongoing digitalization.\nPersistent tech vacancies: High vacancy rates in the Information & Communication sector suggest continued talent shortages.\nCountry heterogeneity: Significant variation exists across EU countries in ICT employment shares, with Nordic and Western European countries generally leading.\nEducation-market alignment: Graduate numbers in ICT fields have been increasing, but the relationship with labor market outcomes varies by country."
+  },
+  {
+    "objectID": "quarto/report.html#limitations",
+    "href": "quarto/report.html#limitations",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "6.2 Limitations",
+    "text": "6.2 Limitations\n\nData availability: Some indicators (especially earnings) are only available for select years.\nDefinition changes: Eurostat methodological changes can affect time series comparability.\nAggregation issues: EU27 aggregates may mask significant within-country variation.\nCausality: Cross-sectional correlations do not establish causal relationships."
+  },
+  {
+    "objectID": "quarto/report.html#policy-implications",
+    "href": "quarto/report.html#policy-implications",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "6.3 Policy Implications",
+    "text": "6.3 Policy Implications\n\nInvestment in digital skills education appears well-justified given persistent vacancies\nCountries with lower ICT employment shares may benefit from policies promoting digital transformation\nWork-based learning programs may help bridge the gap between education and employment"
+  },
+  {
+    "objectID": "quarto/report.html#session-information",
+    "href": "quarto/report.html#session-information",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "7.1 Session Information",
+    "text": "7.1 Session Information\n\n\nR version 4.3.3 (2024-02-29)\nPlatform: x86_64-conda-linux-gnu (64-bit)\nRunning under: Ubuntu 25.10\n\nMatrix products: default\nBLAS/LAPACK: /home/core/miniconda3/envs/statistical-analysis/lib/libopenblasp-r0.3.30.so;  LAPACK version 3.12.0\n\nlocale:\n [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              \n [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    \n [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   \n [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 \n [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       \n\ntime zone: Africa/Tunis\ntzcode source: system (glibc)\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n [1] broom_1.0.11    scales_1.4.0    knitr_1.50      here_1.0.1     \n [5] lubridate_1.9.4 forcats_1.0.0   stringr_1.5.2   dplyr_1.1.4    \n [9] purrr_1.1.0     readr_2.1.5     tidyr_1.3.1     tibble_3.3.0   \n[13] ggplot2_3.5.2   tidyverse_2.0.0\n\nloaded via a namespace (and not attached):\n [1] gtable_0.3.6       jsonlite_2.0.0     compiler_4.3.3     tidyselect_1.2.1  \n [5] yaml_2.3.10        fastmap_1.2.0      R6_2.6.1           generics_0.1.4    \n [9] backports_1.5.0    rprojroot_2.1.1    pillar_1.11.0      RColorBrewer_1.1-3\n[13] tzdb_0.5.0         rlang_1.1.6        stringi_1.8.7      xfun_0.53         \n[17] timechange_0.3.0   cli_3.6.5          withr_3.0.2        magrittr_2.0.3    \n[21] digest_0.6.37      grid_4.3.3         hms_1.1.3          lifecycle_1.0.4   \n[25] vctrs_0.6.5        evaluate_1.0.5     glue_1.8.0         farver_2.1.2      \n[29] rmarkdown_2.29     tools_4.3.3        pkgconfig_2.0.3    htmltools_0.5.8.1"
+  },
+  {
+    "objectID": "quarto/report.html#data-dictionary",
+    "href": "quarto/report.html#data-dictionary",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "7.2 Data Dictionary",
+    "text": "7.2 Data Dictionary\nSee outputs/tables/data_dictionary.md for full variable definitions."
+  },
+  {
+    "objectID": "quarto/report.html#attribution",
+    "href": "quarto/report.html#attribution",
+    "title": "European Tech & Engineering Job Market Evolution",
+    "section": "7.3 Attribution",
+    "text": "7.3 Attribution\nData Source: Eurostat (https://ec.europa.eu/eurostat)\nAll data are subject to Eurostat copyright policy. Reuse is authorized provided the source is acknowledged.\nDataset codes used: isoc_sks_itspt, une_rt_a, une_rt_m, jvs_a_rate_r2, educ_uoe_grad02, earn_ses_pub2s"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "European Tech & Engineering Job Market Analysis",
+    "section": "",
+    "text": "This project analyzes the evolution of the European tech and engineering job market using official Eurostat data from 2014-2024.\n\n\n\n\n\n\n\nComprehensive analysis including:\n\nICT employment trends across EU27\nJob vacancy dynamics\nEducational pipeline analysis\nCross-country comparisons\nStatistical hypothesis testing\n\n\n\n\n\nPresentation-ready slides with:\n\nKey visualizations\nExecutable R code (WebR)\nStatistical evidence\nPolicy implications"
+  },
+  {
+    "objectID": "index.html#welcome",
+    "href": "index.html#welcome",
+    "title": "European Tech & Engineering Job Market Analysis",
+    "section": "",
+    "text": "This project analyzes the evolution of the European tech and engineering job market using official Eurostat data from 2014-2024.\n\n\n\n\n\n\n\nComprehensive analysis including:\n\nICT employment trends across EU27\nJob vacancy dynamics\nEducational pipeline analysis\nCross-country comparisons\nStatistical hypothesis testing\n\n\n\n\n\nPresentation-ready slides with:\n\nKey visualizations\nExecutable R code (WebR)\nStatistical evidence\nPolicy implications"
+  },
+  {
+    "objectID": "index.html#key-statistical-findings",
+    "href": "index.html#key-statistical-findings",
+    "title": "European Tech & Engineering Job Market Analysis",
+    "section": "Key Statistical Findings",
+    "text": "Key Statistical Findings\nAll tests show highly significant results (p &lt; 0.05), confirming that:\n\n\n\n\n\n\n\n\nFinding\nStatistical Test\nResult\n\n\n\n\n✅ ICT employment is genuinely growing\nLinear Regression\np &lt; 0.001\n\n\n✅ Tech sector has persistently higher vacancy rates\nPaired t-test\np &lt; 0.001\n\n\n✅ Countries with more tech jobs have higher wages\nPearson Correlation\nr = 0.63, p &lt; 0.001\n\n\n✅ Standard labor market dynamics apply\nBeveridge Curve\nr = -0.95, p &lt; 0.001\n\n\n✅ COVID-19 accelerated ICT growth\nStructural Break Test\np = 0.004"
+  },
+  {
+    "objectID": "index.html#data-sources",
+    "href": "index.html#data-sources",
+    "title": "European Tech & Engineering Job Market Analysis",
+    "section": "Data Sources",
+    "text": "Data Sources\nAll data sourced from Eurostat:\n\nisoc_sks_itspt - ICT Specialists Employment\nune_rt_a, une_rt_m - Unemployment Rates\njvs_a_rate_r2 - Job Vacancy Rates\neduc_uoe_grad02 - Tertiary Graduates\nearn_ses_pub2s - Median Earnings"
+  },
+  {
+    "objectID": "index.html#repository",
+    "href": "index.html#repository",
+    "title": "European Tech & Engineering Job Market Analysis",
+    "section": "Repository",
+    "text": "Repository\n📁 View Source Code on GitHub\nAuthor: kouki abderrahmen\nLicense: MIT"
+  }
+]

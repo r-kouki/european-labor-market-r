@@ -1,0 +1,79 @@
+---
+title: "European Tech & Engineering Job Market Analysis"
+subtitle: "Data-Driven Insights from Eurostat (2014-2024)"
+author: "kouki abderrahmen"
+date: today
+format:
+  html:
+    toc: false
+    page-layout: full
+---
+
+## Welcome
+
+This project analyzes the evolution of the European tech and engineering job market using official Eurostat data from 2014-2024.
+
+### 📊 Explore the Analysis
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### [Full Report](quarto/report.html)
+
+Comprehensive analysis including:
+
+- ICT employment trends across EU27
+- Job vacancy dynamics
+- Educational pipeline analysis
+- Cross-country comparisons
+- **Statistical hypothesis testing**
+:::
+
+::: {.column width="50%"}
+### [Interactive Slides](quarto/slides.html)
+
+Presentation-ready slides with:
+
+- Key visualizations
+- **Executable R code (WebR)**
+- Statistical evidence
+- Policy implications
+:::
+
+::::
+
+---
+
+## Key Statistical Findings
+
+All tests show highly significant results (p < 0.05), confirming that:
+
+| Finding | Statistical Test | Result |
+|---------|------------------|--------|
+| ✅ ICT employment is genuinely growing | Linear Regression | p < 0.001 |
+| ✅ Tech sector has persistently higher vacancy rates | Paired t-test | p < 0.001 |
+| ✅ Countries with more tech jobs have higher wages | Pearson Correlation | r = 0.63, p < 0.001 |
+| ✅ Standard labor market dynamics apply | Beveridge Curve | r = -0.95, p < 0.001 |
+| ✅ COVID-19 accelerated ICT growth | Structural Break Test | p = 0.004 |
+
+---
+
+## Data Sources
+
+All data sourced from [Eurostat](https://ec.europa.eu/eurostat):
+
+- `isoc_sks_itspt` - ICT Specialists Employment
+- `une_rt_a`, `une_rt_m` - Unemployment Rates
+- `jvs_a_rate_r2` - Job Vacancy Rates
+- `educ_uoe_grad02` - Tertiary Graduates
+- `earn_ses_pub2s` - Median Earnings
+
+---
+
+## Repository
+
+📁 [View Source Code on GitHub](https://github.com/koukiabderrahmen/r-project)
+
+**Author**: kouki abderrahmen
+
+**License**: MIT
