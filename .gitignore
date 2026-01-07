@@ -1,0 +1,115 @@
+# ============================================
+# AI and LLM guidance files (not for public)
+# ============================================
+AGENTS.md
+CLAUDE.md
+.cursorrules
+.aider*
+.ai/
+.cursor/
+
+# ============================================
+# R artifacts
+# ============================================
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+.Ruserdata
+.Renviron
+
+# ============================================
+# Data files (too large / regenerable)
+# ============================================
+# Raw data (downloaded via scripts)
+data/raw/
+data/cache/
+
+# Processed data (can be regenerated)
+data/processed/*.csv
+data/processed/*.rds
+
+# Keep directory structure and documentation
+!data/*/.gitkeep
+!data/README.md
+
+# ============================================
+# Generated outputs
+# ============================================
+# Quarto intermediate files
+.quarto/
+*_files/
+*.html
+!outputs/**/*.html
+!quarto/**/*.html
+
+# Keep minimal example outputs but ignore them in main workflow
+minimal.html
+minimal.pdf
+minimal_files/
+
+# Figures (regenerable)
+outputs/figures/*
+!outputs/figures/.gitkeep
+!outputs/figures/README.md
+
+# Tables (regenerable CSV files)
+outputs/tables/*.csv
+
+# Keep documentation
+!outputs/tables/ATTRIBUTION.md
+!outputs/tables/data_dictionary.md
+
+# PDF and Word outputs
+*.pdf
+*.docx
+
+# ============================================
+# OS files
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+*~
+.Spotlight-V100
+.Trashes
+
+# ============================================
+# IDE
+# ============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================
+# Temporary files
+# ============================================
+*.tmp
+*.temp
+*.log
+*.bak
+
+# ============================================
+# Package management
+# ============================================
+renv/
+renv.lock
+packrat/
+
+# ============================================
+# Python (if used alongside R)
+# ============================================
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+env/
+.venv/
+
+# ============================================
+# Conda
+# ============================================
+.conda/

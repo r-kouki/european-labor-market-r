@@ -1,0 +1,6 @@
+name: statistical-analysis
+channels:
+  - conda-forge
+dependencies:
+  - r-base>=4.3
+  - quarto

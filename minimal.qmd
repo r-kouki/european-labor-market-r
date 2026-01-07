@@ -1,0 +1,10 @@
+---
+title: "Minimal"
+format:
+  html: default
+  pdf: default
+---
+
+```{r}
+summary(cars)
+```

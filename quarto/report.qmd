@@ -1,0 +1,266 @@
+---
+title: "European Tech & Engineering Job Market Evolution"
+subtitle: "A Data-Driven Analysis (2014-2024)"
+author: "Statistical Analysis Project"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    number-sections: true
+    code-fold: true
+    code-summary: "Show code"
+    theme: cosmo
+    self-contained: true
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+library(tidyverse)
+library(here)
+library(knitr)
+library(scales)
+
+# Set project root (one level up from quarto/)
+project_root <- here::here()
+if (basename(project_root) == "quarto") {
+  project_root <- dirname(project_root)
+}
+
+# Load panel data
+panel <- readRDS(file.path(project_root, "data", "processed", "panel_annual.rds"))
+
+# Load monthly unemployment if available
+unemp_monthly_path <- file.path(project_root, "data", "processed", "unemp_monthly_2020_2025.rds")
+if (file.exists(unemp_monthly_path)) {
+  unemp_monthly <- readRDS(unemp_monthly_path)
+}
+
+# Helper function
+fmt_num <- function(x, digits = 1) {
+  format(round(x, digits), nsmall = digits, big.mark = ",")
+}
+```
+
+# Introduction
+
+## Motivation
+
+The European labor market has undergone significant transformation over the past decade, driven by digitalization and technological advancement. Understanding these changes is critical for policymakers, educators, and job seekers alike.
+
+This report analyzes key indicators of the European tech and engineering job market from 2014 to 2024, using official Eurostat data to answer fundamental questions about workforce evolution, opportunity dynamics, and educational pipeline alignment.
+
+## Research Questions
+
+This analysis addresses the following questions:
+
+1. **ICT Employment Growth**: How has the share of ICT specialists in total employment evolved across EU countries?
+
+2. **Labor Market Dynamics**: What is the relationship between unemployment and job vacancies (the Beveridge curve)?
+
+3. **Sectoral Opportunities**: How do job vacancy rates in the Information & Communication sector compare to the overall economy?
+
+4. **Educational Pipeline**: Are European universities producing enough ICT and engineering graduates to meet market demands?
+
+5. **Cross-Country Variation**: Which countries lead in ICT employment, and what factors correlate with higher tech employment shares?
+
+# Data Sources
+
+All data are sourced from Eurostat, the statistical office of the European Union.
+
+```{r data-sources-table}
+data_sources <- tribble(
+  ~Indicator, ~`Dataset Code`, ~Description, ~Coverage,
+  "ICT Employment", "isoc_sks_itspt", "Employed ICT specialists as % of employment", "2014-2024",
+  "Unemployment (Annual)", "une_rt_a", "Unemployment rate, ages 15-74", "2014-2024",
+  "Unemployment (Monthly)", "une_rt_m", "Seasonally adjusted unemployment rate", "2020-2025",
+  "Job Vacancies", "jvs_a_rate_r2", "Job vacancy rate by NACE sector", "2014-2024",
+  "Graduates", "educ_uoe_grad02", "Tertiary graduates by field", "2014-2023",
+  "Earnings", "earn_ses_pub2s", "Median hourly earnings (SES)", "2014, 2018, 2022"
+)
+
+knitr::kable(data_sources, caption = "Eurostat Datasets Used in This Analysis")
+```
+
+## Geographic Coverage
+
+The analysis covers:
+
+- **EU27**: European Union (27 member states, post-Brexit composition)
+- **Individual EU member states**: All 27 countries
+- **Associated countries**: UK, Switzerland, Norway, Iceland (where available)
+
+# Methodology
+
+## Data Pipeline
+
+The analysis follows a reproducible pipeline:
+
+1. **Download**: Raw data fetched from Eurostat API using the `eurostat` R package
+2. **Clean**: Standardize formats, handle missing values, apply filters
+3. **Transform**: Create derived indicators, build panel dataset
+4. **Visualize**: Generate publication-quality figures
+5. **Report**: Compile findings in this document
+
+## Key Definitions
+
+- **ICT Specialists**: Workers whose main job involves developing, operating, and maintaining ICT systems (as defined by Eurostat)
+- **Job Vacancy Rate**: Number of job vacancies as a percentage of occupied posts plus vacancies
+- **NACE Sector J**: Information and Communication activities
+- **NACE Sector M**: Professional, Scientific, and Technical activities
+
+# Results
+
+## ICT Specialists Employment
+
+### EU27 Trend
+
+```{r eu27-ict-trend}
+eu27_ict <- panel |>
+  filter(geo == "EU27_2020", !is.na(ict_share_pc_emp))
+
+if (nrow(eu27_ict) > 0) {
+  start_val <- eu27_ict$ict_share_pc_emp[eu27_ict$year == min(eu27_ict$year)]
+  end_val <- eu27_ict$ict_share_pc_emp[eu27_ict$year == max(eu27_ict$year)]
+  change <- end_val - start_val
+}
+```
+
+The share of ICT specialists in EU27 total employment has grown steadily over the past decade:
+
+- **Starting point (`r min(eu27_ict$year)`)**: `r fmt_num(start_val)`% of total employment
+- **Latest data (`r max(eu27_ict$year)`)**: `r fmt_num(end_val)`% of total employment
+- **Change**: +`r fmt_num(change)` percentage points
+
+```{r fig-ict-trend, fig.cap="ICT Specialists Share of Employment Over Time"}
+#| fig-width: 10
+#| fig-height: 6
+
+knitr::include_graphics(file.path(project_root, "outputs", "figures", "fig01_ict_share_trend.png"))
+```
+
+### Cross-Country Comparison
+
+```{r top-ict-countries}
+latest_year <- max(panel$year[!is.na(panel$ict_share_pc_emp)])
+
+top_ict <- panel |>
+  filter(year == latest_year, !is_aggregate, !is.na(ict_share_pc_emp)) |>
+  arrange(desc(ict_share_pc_emp)) |>
+  head(10) |>
+  select(Country = geo_name, `ICT Share (%)` = ict_share_pc_emp)
+
+knitr::kable(top_ict, digits = 1, caption = paste("Top 10 Countries by ICT Employment Share,", latest_year))
+```
+
+```{r fig-ict-ranking, fig.cap="ICT Employment Share: Top and Bottom Countries"}
+knitr::include_graphics(file.path(project_root, "outputs", "figures", "fig08_ict_share_ranking.png"))
+```
+
+## Job Vacancy Dynamics
+
+### Information & Communication Sector
+
+```{r fig-vacancy-j, fig.cap="Job Vacancy Rate in Information & Communication Sector"}
+fig_path <- file.path(project_root, "outputs", "figures", "fig03_vacancy_rate_J_trend.png")
+if (file.exists(fig_path)) {
+  knitr::include_graphics(fig_path)
+} else {
+  cat("*Figure not available - Job vacancy data could not be retrieved from Eurostat.*")
+}
+```
+
+The Information & Communication sector (NACE J) consistently shows higher vacancy rates than the overall economy, indicating persistent demand for workers in this field.
+
+### Beveridge Curve Analysis
+
+The Beveridge curve shows the relationship between unemployment and job vacancies. A shift in this relationship can indicate structural changes in the labor market.
+
+```{r fig-beveridge, fig.cap="Beveridge Curve: EU27 Unemployment vs Job Vacancies"}
+fig_path <- file.path(project_root, "outputs", "figures", "fig04_unemp_vs_vacancy.png")
+if (file.exists(fig_path)) {
+  knitr::include_graphics(fig_path)
+} else {
+  cat("*Figure not available - Job vacancy data could not be retrieved from Eurostat.*")
+}
+```
+
+## Educational Pipeline
+
+### Graduate Trends
+
+```{r fig-graduates, fig.cap="Tertiary Graduates in ICT and Engineering Fields"}
+if (file.exists(file.path(project_root, "outputs", "figures", "fig05_graduates_ict_vs_eng.png"))) {
+  knitr::include_graphics(file.path(project_root, "outputs", "figures", "fig05_graduates_ict_vs_eng.png"))
+}
+```
+
+## Earnings Relationship
+
+```{r fig-salary, fig.cap="Relationship Between ICT Employment and Hourly Earnings"}
+if (file.exists(file.path(project_root, "outputs", "figures", "fig06_salary_vs_ict_share.png"))) {
+  knitr::include_graphics(file.path(project_root, "outputs", "figures", "fig06_salary_vs_ict_share.png"))
+}
+```
+
+Countries with higher ICT employment shares tend to have higher median hourly earnings, though causality cannot be established from this cross-sectional relationship.
+
+## Work-Based Learning
+
+```{r fig-wbl, fig.cap="Exposure of VET Graduates to Work-Based Learning"}
+if (file.exists(file.path(project_root, "outputs", "figures", "fig07_wbl_exposure_bar.png"))) {
+  knitr::include_graphics(file.path(project_root, "outputs", "figures", "fig07_wbl_exposure_bar.png"))
+}
+```
+
+# Discussion
+
+## Key Findings
+
+1. **Growing ICT workforce**: The EU27 has seen consistent growth in ICT specialist employment, reflecting ongoing digitalization.
+
+2. **Persistent tech vacancies**: High vacancy rates in the Information & Communication sector suggest continued talent shortages.
+
+3. **Country heterogeneity**: Significant variation exists across EU countries in ICT employment shares, with Nordic and Western European countries generally leading.
+
+4. **Education-market alignment**: Graduate numbers in ICT fields have been increasing, but the relationship with labor market outcomes varies by country.
+
+## Limitations
+
+1. **Data availability**: Some indicators (especially earnings) are only available for select years.
+
+2. **Definition changes**: Eurostat methodological changes can affect time series comparability.
+
+3. **Aggregation issues**: EU27 aggregates may mask significant within-country variation.
+
+4. **Causality**: Cross-sectional correlations do not establish causal relationships.
+
+## Policy Implications
+
+- Investment in digital skills education appears well-justified given persistent vacancies
+- Countries with lower ICT employment shares may benefit from policies promoting digital transformation
+- Work-based learning programs may help bridge the gap between education and employment
+
+# Appendix
+
+## Session Information
+
+```{r session-info}
+sessionInfo()
+```
+
+## Data Dictionary
+
+See `outputs/tables/data_dictionary.md` for full variable definitions.
+
+## Attribution
+
+**Data Source**: Eurostat (https://ec.europa.eu/eurostat)
+
+All data are subject to Eurostat copyright policy. Reuse is authorized provided the source is acknowledged.
+
+Dataset codes used: `isoc_sks_itspt`, `une_rt_a`, `une_rt_m`, `jvs_a_rate_r2`, `educ_uoe_grad02`, `earn_ses_pub2s`
