@@ -1,5 +1,7 @@
 # European Tech & Engineering Job Market Evolution (2014-2024)
 
+**Author:** kouki abderrahmen
+
 A comprehensive analysis of the European tech and engineering labor market using Eurostat data. This project examines ICT employment trends, job vacancies, unemployment dynamics, graduate pipelines, and earnings relationships across EU27 and associated countries.
 
 ## Overview
@@ -95,17 +97,20 @@ source("R/03_build_panel.R")
 # 5. Generate visualizations and summary tables
 source("R/04_visualize.R")
 
-# 6. Export polished outputs
+# 6. Run statistical hypothesis tests
+source("R/04b_statistical_analysis.R")
+
+# 7. Export polished outputs
 source("R/05_export_outputs.R")
 
-# 7. Render Quarto report and slides
+# 8. Render Quarto report and slides
 source("R/06_render_quarto.R")
 ```
 
 Or run everything in one command:
 
 ```bash
-Rscript -e "source('R/00_setup.R'); source('R/01_download.R'); source('R/02_clean.R'); source('R/03_build_panel.R'); source('R/04_visualize.R'); source('R/05_export_outputs.R'); source('R/06_render_quarto.R')"
+Rscript -e "source('R/00_setup.R'); source('R/01_download.R'); source('R/02_clean.R'); source('R/03_build_panel.R'); source('R/04_visualize.R'); source('R/04b_statistical_analysis.R'); source('R/05_export_outputs.R'); source('R/06_render_quarto.R')"
 ```
 
 ## Key Outputs

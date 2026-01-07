@@ -32,6 +32,12 @@ pkgs <- unique(c(
   "MASS",
   "forecast",
 
+  # Statistical testing & inference
+  "broom",
+  "lmtest",
+  "car",
+  "modelsummary",
+
   # Data exploration
   "skimr",
 
